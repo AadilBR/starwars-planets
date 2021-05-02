@@ -52,7 +52,7 @@ function App() {
         {loading && <p className="mb-4 text-center p-3">Loading....</p>}
         {error && <p className="mb-4 text-center p-3">{error}</p>}
       </div>
-      {end ? <p className="bg-dark text-white p-3">Nous avons listé toutes les planètes recensées.</p> : <button type="button" className="btn btn-dark" onClick={() => setPage(p => p + 1)} >Suivantes</button>}
+      {end ? <p className="bg-dark text-white p-3"><b>Nous avons listé toutes les planètes recensées.</b></p> : <button type="button" className="btn btn-dark" onClick={() => setPage(p => p + 1)} ><b>Suivantes</b></button>}
       <a href="../public/StarWars.png"></a><img src="./StarWars.png" class="rounded float-end" alt="logo Star Wars"></img>
     </section>
 
