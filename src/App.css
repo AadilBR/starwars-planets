@@ -2,3 +2,8 @@ body{
   background-image: url('./stars.jpg');
   background-attachment: fixed;
   }
+
+.photo {
+  height: 200px;
+  width: 400px;
+  }

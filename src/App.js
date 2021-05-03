@@ -1,6 +1,8 @@
 import './App.css';
-import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap/dist/css/bootstrap.css";
 import { useEffect, useState } from "react";
+import Star_Wars from "./Star_Wars.png";
+
 
 function App() {
 
@@ -53,8 +55,10 @@ function App() {
         {error && <p className="mb-4 text-center p-3">{error}</p>}
       </div>
       {end ? <p className="bg-dark text-white p-3"><b>Nous avons listé toutes les planètes recensées.</b></p> : <button type="button" className="btn btn-dark" onClick={() => setPage(p => p + 1)} ><b>Suivantes</b></button>}
-      <a href="../public/StarWars.png"></a><img src="./StarWars.png" class="rounded float-end" alt="logo Star Wars"></img>
-    </section>
+      <div className="text-center">
+        <img className="photo" src={Star_Wars} alt="logo Star Wars"></img>
+      </div>
+    </section >
 
   );
 }
